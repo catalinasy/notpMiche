@@ -13,7 +13,7 @@ $color4:rgb(213, 35, 213);
 
 @mixin border() {
     border: $color2 solid 2px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
@@ -47,7 +47,7 @@ body{
     align-items: flex-start;
     margin-right: 10%;
     min-height: 50%;
-    padding-top:10%;
+    padding-top:20%;
     
 }
 
@@ -67,28 +67,32 @@ p{
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 10% 0;
+    padding: 5% 0;
     margin-right: 5%;
 }
 
 .imagen img {
     @include border;
     margin: 1%;
-    width: 45%;
-    height: 15%;
+    width: 130px;
+    height: 130px;
 }
 
 .imagen{
+    @include flex;
     margin:0;
     padding:0;
     display: flex;
     justify-content: space-around;
     align-content: center;
 }
-
+.imagen.centro {
+    margin: 1%;
+}
 .imagen.centro img {
     @include border;
-    width: 80%;
+    width: 130px;
+    height: 130px;
 }
 
 @media only screen and (max-width: 1100px){
@@ -98,8 +102,8 @@ p{
       
     }
     .perfil{
-        width: 50%;
-        height: auto;
+        max-width: 50%;
+        max-height: auto;
         margin: 0;
         padding: 0;
         margin-top: 10%;
@@ -122,13 +126,26 @@ p{
      #fotos{
          @include flex;
          flex-direction: column;
-       
+         padding:10%;
+            margin: 0;
+            width: 100%;
+     }
+
+     .imagen{
+         @include flex;
+         width: 100%;
      }
 
      .imagen img{
-         width: 30%;
+         width: 250px;
+         height: auto;
+     }
+
+     .imagen.centro{
+         justify-content: center;
      }
      .imagen.centro img {
-         width: 30%;
+         width: 250px;
+         height: auto;
      }
 }
