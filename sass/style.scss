@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC');
 
-$color1: #EE7752;
+$color1: rgb(253, 189, 92);
 $color2:rgb(252, 247, 249);
-$color3:#23A6D5;
-$color4:#23D5AB;
+$color3:rgb(213, 35, 174);
+$color4:rgb(213, 35, 213);
 
 @mixin flex(){
     display: flex;
