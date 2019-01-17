@@ -17,9 +17,9 @@ $color2:  #f2a2c2;;
 
 .wrapper{
     @include flex;
-    margin: 5% 0;
-    border-bottom: black solid 2px;
-    border-top: black solid 2px;
+    margin: 5% 5%;
+    
+    border: black solid 2px;
     background-color:$color1;
 }
 
@@ -118,7 +118,7 @@ font-family: 'Exo', sans-serif;
 }
 
 .imagen img:hover {
-    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(2);
   }
 
 @media only screen and (max-width: 1100px){
@@ -152,8 +152,8 @@ font-family: 'Exo', sans-serif;
 
      #fotos{
          @include flex;
-         flex-direction: column;
-         padding:5%;
+            flex-direction: column;
+            padding:5%;
             margin: 0;
             width: 100%;
      }
